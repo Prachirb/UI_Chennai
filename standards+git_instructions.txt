@@ -1,0 +1,77 @@
+Regulation and standards for coding: 
+
+
+1. Variables wont work in CSS, use hex code for colors.
+	Eg:
+		$mobile-app-toggle-radius: rem-calc(10);
+		$mobile-app-toggle-color: $primary-color;
+		$mobile-app-toggle-margin-bottom: $global-margin;
+
+2. Try to use identifiable/relevant id names so the third person can also understand the id name by reading your code.
+	Eg: 
+		<div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left"> 
+		'id name in the above', the same also applies for class names in CSS. You can avoid usage of btn1, bg-btn..etc.
+
+3. Wherever needed add comments in the code for reference.
+
+4. Please try to create generic or reusable classes in CSS.
+
+5. Kindly avoid the usage of manual spaces. (&nbsp;)
+
+6. Instead of <br/> you can define 'top-margin' in css.
+
+7. Use small- medium- large- (all together) classes instead of only large- classes. This will handle the rendering of the components in differently sized devices.
+
+8. Avoid inline, infile Css.
+
+9. Don't use predefined tags of HTML like <center> use classes
+rather.
+
+10. Kindly use the relatable names for HTML files.
+
+------------------------------------------------------------------------
+To 'Push' the changes on Git 
+------------------------------------------------------------------------
+
+1. Create you own Git account (http://www.github.com/)
+2. Create a folder on your local machine where you want to maintain your work.
+3. Open Terminal/Command prompt.
+4. Change Directory and navigate to the folder you created on your machine to maintain your work.
+	(eg: cd UI_Contrib (for linux))
+5. git clone (URL LINK){this will clone the repository from github and create a local copy at your end.}
+	(eg: git clone https://github.com/Prachirb/UI_Chennai.git)
+6. You have all the files at your end, you can work with these or create new html files and update the CSS and save your work.
+
+=================================================================
+
+Saving your changes and pushing them on your repository is via 3 commands.
+git add
+git commit 
+git push
+
+After you have saved your work, go back to the terminal and same folder location.
+
+1. 'git status' : This will give you the status of the new changes made. Files in 'red color' means the files have  changes and not yet saved. Files in 'green color' means the files have chnages and is saved.
+2. 'git branch' : This will give you the current branch your are working on.
+				`git checkout -b new_branch` : This command will create a new branch at your end. (usual practise is to create a new branch from your master branch).
+3. 'git add' : This will add the files you want to save. EG: you have made changes in notebook.html and git status shows this file in red then type `git add notebook.html`. 
+4. 'git commit' : This will commit your changes. Commit is always added with a message/tag, which describes your changes made in the file. `eg: git commit -m "Notebook code made responsive"`. 
+5. 'git push' : This will push the changes to your branch. 
+				(eg: 'git push https://github.com/Prachirb/UI_Chennai master') will push your changes on my repository and branch.
+				https://github.com/Prachirb/UI_Chennai: is the repository path for my account.
+				https://github.com/{Git username}/{repository name}:
+
+				master : branch name. So whichever branch you are working on write that name. You can see the status of your current branch by typing `git branch`. The branch name in green will be your current branch.
+
+=====================================================================================================
+
+The Above steps will make you push your work at your own repositories and from your own branch.
+Once you are ready to share your work, We can take the pull from your branch and test it.
+
+This will avoid the redundant zip folder's upload and download.
+
+Please Note: Kindly add good commit messages, so that on reading we glance over the changes and understand the new contributions.
+
+******************************************************************************************************
+
+
